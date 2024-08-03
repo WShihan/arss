@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.doubanio.com/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://pypi.doubanio.com/simple"
+verify_ssl = true
+name = "pypidoubanio"
+
+[packages]
+flask = {version = "*", index = "pypidoubanio"}
+flask-cors = {version = "*", index = "pypi"}
+flask-sqlalchemy = {version = "*", index = "pypi"}
+flask-migrate = "*"
+psycopg2-binary = "*"
+feedparser = "*"
+feedgen = "*"
+requests = "*"
+htmltext = "*"
+newspaper3k = "*"
+html2text = "*"
+lxml-html-clean = "*"
+markdown = "*"
+flask-apscheduler = "*"
+flask-wtf = "*"
+flask-jwt-extended = "*"
+gunicorn = "*"
+
+[dev-packages]
+python-dotenv = "*"
+
+[requires]
+python_version = "3.8"
